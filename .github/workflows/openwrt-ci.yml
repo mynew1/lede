@@ -103,13 +103,8 @@ jobs:
           CONFIG_TARGET_x86=y
           CONFIG_TARGET_x86_64=y
           CONFIG_TARGET_x86_64_Generic=y
-          EOF
-          
-          # 设置固件大小:
-          cat >> .config <<EOF
-          CONFIG_TARGET_KERNEL_PARTSIZE=30
-          CONFIG_TARGET_ROOTFS_PARTSIZE=200
-          EOF
+          EOF          
+         
           # 固件压缩:
           cat >> .config <<EOF
           CONFIG_TARGET_IMAGES_GZIP=y
