@@ -7,11 +7,14 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: OpenWrt-CI
+name: X64固件编译
 
 on:
   schedule:
     - cron: 0 8 * * 5
+  push:
+    branches: 
+      - master
 
 jobs:
 
